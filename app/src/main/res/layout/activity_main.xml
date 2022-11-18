@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/fnum1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:hint="enter First Number"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:background="@color/teal_700"
+        android:textAlignment="center"
+        android:textColorHint="@color/purple_200"/>
+    <EditText
+        android:id="@+id/fnum2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:hint="enter Second Number"
+        android:layout_margin="10dp"
+        android:background="@color/teal_700"
+        android:textAlignment="center"
+        android:textColorHint="@color/purple_200"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bplus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/bminus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="-"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmult"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/bdiv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="/"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Result"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:background="@color/teal_700"
+        android:layout_margin="16dp"/>
+
+
+
+
+</LinearLayout>
